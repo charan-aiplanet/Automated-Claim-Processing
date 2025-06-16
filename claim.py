@@ -38,14 +38,14 @@ logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
 # Configuration
-GROQ_API_KEY = "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" # Use Streamlit secrets for security
+GROQ_API_KEY = st.secrets['GROQ_API_KEY'] # Use Streamlit secrets for security
 GROQ_MODEL = "llama3-8b-8192"
 
 # Email Configuration - WORKING SMTP SETUP
 SMTP_SERVER = "smtp.gmail.com"
 SMTP_PORT = 587
-EMAIL_USER = "lukkashivacharan@gmail.com"
-EMAIL_PASSWORD = "trgy ujlb zbdz bupo"
+EMAIL_USER = st.secrets['EMAIL_USER']
+EMAIL_PASSWORD = st.secrets['EMAIL_PASSWORD']
 
 def extract_text_from_pdf(pdf_file) -> str:
     """Extract text from uploaded PDF file"""
