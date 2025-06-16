@@ -1569,7 +1569,7 @@ def main():
             
             *{agent['role']}*
             
-            Status: 🟢 {agent['status']}
+
             """)
         
         st.markdown("---")
