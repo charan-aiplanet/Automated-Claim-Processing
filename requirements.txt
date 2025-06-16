@@ -14,3 +14,4 @@ pillow>=10.0.0            # For image processing
 # pytest>=7.4.0           # For unit testing
 # black>=23.0.0           # For code formatting
 # flake8>=6.0.0           # For code linting
+plotly
