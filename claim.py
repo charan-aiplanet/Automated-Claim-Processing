@@ -27,7 +27,7 @@ logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
 # Configuration
-GROQ_API_KEY = st.secrets['GROQ API_KEY']  # Use Streamlit secrets for security
+GROQ_API_KEY = st.secrets['GROQ_API_KEY']  # Use Streamlit secrets for security
 GROQ_MODEL = "llama3-8b-8192"
 
 # Email Configuration - WORKING SMTP SETUP
